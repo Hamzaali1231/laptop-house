@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#5146cb"><title>Mobile Phones | Laptop House</title>
+<link rel="stylesheet" href="style.css">
+<style>
+main{padding-bottom:50px}.mobile-collection{padding:44px 0 68px}.back-link{display:inline-block;margin:22px 0;color:var(--muted)}
+.mobile-card .product-photo{display:block;width:100%;margin:12px 0 18px;height:200px;background:#fff;border:0;border-radius:8px;overflow:hidden}
+.mobile-card .product-photo img{width:100%;height:100%;object-fit:contain}.mobile-card .detail-link{display:block;margin-top:12px}
+#mobile-order-summary{background:#edf2e6;padding:15px;margin:18px 0;border-radius:6px}
+@media(max-width:650px){.mobile-card .product-photo{height:230px}}
+</style>
+</head>
+<body><header><a class="logo" href="./" aria-label="Laptop House"><img src="logo.svg" alt="LAPTOPHOUSE" width="250" height="50"></a><nav><a href="./" data-mobile-label="laptops">Laptops</a><a href="mobiles.html?lang=ar" data-mobile-label="arabic">العربية</a></nav><div class="header-actions"><a class="contact" href="https://wa.me/963982759514">WhatsApp ↗</a></div></header>
+<main><a class="back-link" href="./" data-mobile-label="backLaptop">← Back to laptops</a><section id="mobiles" class="mobile-collection"><div class="section-title"><div><p class="eyebrow" data-mobile-copy="eyebrow"></p><h1 data-mobile-copy="heading"></h1></div><p data-mobile-copy="subheading"></p></div><div class="tools"><div id="mobile-filters" role="group"></div><div class="search-sort"><label class="search">⌕ <input id="mobile-search"></label><select id="mobile-sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div></div><p id="mobile-count" aria-live="polite"></p><div id="mobile-products" class="grid"></div></section></main>
+<footer><a class="logo" href="./"><img src="logo.svg" alt="LAPTOPHOUSE" width="250" height="50"></a><span>+963 982 759 514</span></footer>
+<dialog id="mobile-order"><button class="close" data-mobile-close aria-label="Close">×</button><p class="eyebrow" data-mobile-copy="eyebrow"></p><h2 data-mobile-copy="orderHeading"></h2><div id="mobile-order-summary"></div><form id="mobile-order-form"><label><span>Name</span><input name="name" autocomplete="name" maxlength="100" required></label><label><span>Phone number</span><input name="phone" type="tel" dir="ltr" autocomplete="tel" maxlength="40" required placeholder="+963 …"></label><label><span>City / delivery area</span><input name="city" autocomplete="address-level2" maxlength="150" required></label><p class="privacy">You’ll review and send the request yourself in WhatsApp.</p><button class="primary" type="submit">Continue to WhatsApp ↗</button></form></dialog>
+<script src="phones.js"></script></body></html>

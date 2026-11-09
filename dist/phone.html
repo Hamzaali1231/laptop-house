@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#5146cb"><title>Phone details | Laptop House</title>
+<link rel="stylesheet" href="style.css">
+<style>
+main{padding-bottom:60px}.back-link{display:inline-block;margin:24px 0;color:var(--muted)}
+.phone-detail{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);gap:7%;align-items:center;padding:20px 0 48px}
+.phone-detail-image{background:#f0f2eb;border-radius:16px;min-height:360px;display:grid;place-items:center}.phone-detail-image img{display:block;width:100%;height:100%;max-height:520px;object-fit:contain}
+.phone-detail h1{font-size:clamp(34px,5vw,58px);letter-spacing:-2px}.phone-detail dl{margin:24px 0}.phone-detail dl>div{display:grid;grid-template-columns:140px 1fr;padding:13px 0;border-bottom:1px solid var(--line)}
+#phone-order{max-width:560px;margin-top:10px}#phone-order .primary{margin-top:8px}
+@media(max-width:700px){.phone-detail{grid-template-columns:1fr;gap:28px}.phone-detail-image{min-height:260px}.phone-detail-image img{max-height:380px}}
+</style>
+</head>
+<body><header><a class="logo" href="./" aria-label="Laptop House"><img src="logo.svg" alt="LAPTOPHOUSE" width="250" height="50"></a><nav><a href="mobiles.html" data-mobile-label="phones">Phones</a><a href="mobiles.html?lang=ar" data-mobile-label="arabic">العربية</a></nav><div class="header-actions"><a class="contact" href="https://wa.me/963982759514">WhatsApp ↗</a></div></header>
+<main><div id="phone-page"></div><section id="phone-order"><p class="eyebrow" data-mobile-copy="eyebrow"></p><h2 data-mobile-copy="orderHeading"></h2><form id="phone-order-form"><label><span>Name</span><input name="name" autocomplete="name" maxlength="100" required></label><label><span>Phone number</span><input name="phone" type="tel" dir="ltr" autocomplete="tel" maxlength="40" required placeholder="+963 …"></label><label><span>City / delivery area</span><input name="city" autocomplete="address-level2" maxlength="150" required></label><p class="privacy">You’ll review and send the request yourself in WhatsApp.</p><button class="primary" type="submit">Continue to WhatsApp ↗</button></form></section></main>
+<footer><a class="logo" href="./"><img src="logo.svg" alt="LAPTOPHOUSE" width="250" height="50"></a><span>+963 982 759 514</span></footer>
+<script src="phones.js"></script></body></html>
