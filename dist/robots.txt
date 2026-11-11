@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hamzaali1231.github.io/My-WebSite/dist/sitemap.xml
+Sitemap: https://laptophousesyria.store/sitemap.xml
